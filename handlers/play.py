@@ -436,7 +436,7 @@ async def play(_, message: Message):
                               #print(e)
                               await lel.edit(
                                   f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                                  "\n\nOr manually add @camilaowner to your Group and try again</b>",
+                                  "\n\nOr manually add @kidmusic_bot to your Group and try again</b>",
                               )
                               pass
     try:
@@ -444,7 +444,7 @@ async def play(_, message: Message):
         #lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            f"<i> @camilaowner Userbot not in this chat, Ask admin to send /play command for first time or add assistant manually</i>"
+            f"<i> @kidmusic_bot Userbot not in this chat, Ask admin to send /play command for first time or add assistant manually</i>"
         )
         return     
     sender_id = message.from_user.id
@@ -533,7 +533,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="✯Camila ᴍᴜꜱɪᴄ✯▶️ **Playing** here the song requested by {} 😜".format(
+        caption="✯Kid ᴍᴜꜱɪᴄ✯▶️ **Playing** here the song requested by {} 😜".format(
         message.from_user.mention()
         ),
     )
@@ -584,7 +584,7 @@ async def deezer(client: Client, message_: Message):
                               #print(e)
                               await lel.edit(
                                   f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                                  "\n\nOr manually add @camilaowner to your Group and try again</b>",
+                                  "\n\nOr manually add @kidmusic_bot to your Group and try again</b>",
                               )
                               pass
     try:
@@ -647,9 +647,9 @@ async def deezer(client: Client, message_: Message):
         loc = file_path
         appendable = [s_name, r_by, loc]
         qeue.append(appendable)
-        await res.edit_text(f"Camila ᴍᴜꜱɪᴄ✯=#️⃣ Queued at position {position}")
+        await res.edit_text(f"kid ᴍᴜꜱɪᴄ✯=#️⃣ Queued at position {position}")
     else:
-        await res.edit_text("Camila ᴍᴜꜱɪᴄ✯=▶️ Playing.....")
+        await res.edit_text("kid ᴍᴜꜱɪᴄ✯=▶️ Playing.....")
         chat_id = message_.chat.id
         que[chat_id] = []
         qeue = que.get(message_.chat.id)
